@@ -1,0 +1,149 @@
+/* CSS Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+/* CSS Reset */
+
+/* Variables */
+:root {
+  /* Colors */
+  --blue-dark: #1d242d;
+  --blue-medium: #262e38;
+  --blue-light: #969fad;
+  --white: #fff;
+  --orange: #fc7614;
+  --body: #131518;
+
+  /* Font Sizes */
+  --fs-l: 1.75rem;
+  --fs-m: 1rem;
+  --fs-s: 0.938rem;
+
+  /* Font Weight */
+  --fw-l: 700;
+  --fw-m: 400;
+}
+
+/* Utility Classes */
+/* Colors */
+.white {
+  color: var(--white);
+}
+
+.blue-light {
+  color: var(--blue-light);
+}
+
+.blue-dark {
+  color: var(--blue-dark);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+/* Background Colors */
+.bg-blue-dark {
+  background-color: var(--blue-dark);
+}
+
+.bg-blue-medium {
+  background-color: var(--blue-medium);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-body {
+  background-color: var(--body);
+}
+
+/* Text Presets */
+.text-preset-1 {
+  font-size: var(--fs-l);
+  font-weight: var(--fw-l);
+}
+
+.text-preset-2 {
+  font-size: var(--fs-m);
+  font-weight: var(--fw-l);
+}
+
+.text-preset-3 {
+  font-size: var(--fs-s);
+  font-weight: var(--fw-l);
+}
+
+.text-preset-4 {
+  font-size: var(--fs-s);
+  font-weight: var(--fw-m);
+}
+
+/* Body */
+body {
+  font-family: "Overpass", sans-serif;
+}

@@ -13,7 +13,48 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="ff-primary bg-body">
+    <main>
+      <!-- Component Not Submitted -->
+      <section class="component-initial jsComponentInitial bg-blue-dark">
+        <div class="star bg-blue-medium">
+          <img src="./images/icon-star.svg" alt="" aria-hidden="true" />
+        </div>
+        <h1 class="text-preset-1 white">How did we do?</h1>
+        <p class="text-preset-4 blue-light">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <section class="ratings">
+          <div class="bg-blue-medium blue-light text-preset-2 jsRating hover">
+            1
+          </div>
+          <div class="bg-blue-medium blue-light text-preset-2 jsRating hover">
+            2
+          </div>
+          <div class="bg-blue-medium blue-light text-preset-2 jsRating hover">
+            3
+          </div>
+          <div class="bg-blue-medium blue-light text-preset-2 jsRating hover">
+            4
+          </div>
+          <div class="bg-blue-medium blue-light text-preset-2 jsRating hover">
+            5
+          </div>
+        </section>
+        <p class="warning jsWarning text-preset-4">Please select a rating</p>
+        <button class="bg-orange blue-dark text-preset-3 jsSubmit">Submit</button>
+      </section>
+      <!-- Component Submitted -->
+       <section class="component-submitted jsComponentSubmitted bg-blue-dark hidden">
+        <img src="./images/illustration-thank-you.svg" alt="Illustrative smartphone">
+        <h2 class="orange text-preset-4 bg-blue-medium">
+            You selected <span class="jsSelectedRating"></span> out of 5
+        </h2>
+        <h3 class="white text-preset-1">Thank you!</h3>
+        <p class="text-preset-4 blue-light">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+       </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
